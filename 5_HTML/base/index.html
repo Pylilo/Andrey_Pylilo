@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+<table witdh="700px">
+    <tr>
+        <td><b>Простая форма поиска с вариантами:</b><fieldset><legend>Строка поиска</legend>
+            <input type="text" name="Search" maxlength="10">
+            <input type="submit" value="Искать"><br> 
+            <input type="radio" name="radio" value="на сайте">на сайте
+         <input type="radio" name="radio" value="в google">в google
+        </fieldset></td>
+        <td><b>Простая форма поиска с вариантами:</b><fieldset><legend>Строка поиска</legend>
+            <input required autofocus placeholder="обязательно поле" type="text" name="Search">
+            <input type="submit" value="Искать"><br>
+            <input type="radio" name="radio2" value="на сайте">на сайте
+            <input type="radio" name="radio2" value="в google">в google
+        </fieldset></td>
+    </tr>
+    <tr>
+        <td><b>Простая форма авторизации:</b><fieldset><legend>Авторизуйтесь</legend>
+            <input required placeholder="обязательное поле" type="text" name="login">Логин<br>
+            <input required placeholder="обязательное поле" type="password" name="password">Пароль<br>
+            <input type="checkbox" name="forever"> Оставаться в системе<br>
+            <input type="submit" value="Войти">
+        </fieldset></td>
+        <td><b>Опрос(голосование):</b><fieldset><legend>Как Вам?</legend>
+            <input type="radio" name="The senses">ничего<br>
+            <input type="radio" name="The senses">неплохо<br>
+            <input type="radio" name="The senses">хорошо<br>
+            <input type="radio" name="The senses">супер<br>
+            <input type="hidden" name="data_voite"value="2013.12.31">
+            <input type="submit" value="Отправить">
+        </fieldset></td>
+    </tr>
+    <tr>
+        <td><b>Отзыв:</b><fieldset><legend>Оставьте Ваш отзыв</legend>
+            <input required placeholder="обязательное поле" type="text" name="name">Имя<br>
+            <input required placeholder="обязательное поле" type="email" name="email">e-mail<br>
+            <textarea name="text_area" lang="ru">Форма отправки</textarea><br>
+            <input type="submit" value="Отправить">
+        </fieldset></td>
+        <td><b>Выпадающий и мульти списки:</b><fieldset><legend>Города РБ</legend>
+        <select name="citys" id="list">
+            <option value="1">Брест</option>
+            <option value="2">Минск</option>
+            <option value="3">Витебск</option>
+            <option value="4">Гомель</option>
+            <option value="5">Гродно</option>
+            <option value="6">Могилёв</option>
+        </select>
+        <select name="list" id="list">
+            <optgroup label="Города РБ">
+                  <option value="1">Брест</option>
+                  <option value="2">Минск</option>
+                  <option value="3">Витебск</option>
+            </optgroup>
+            <optgroup label="Города России">
+                  <option value="4">Москва</option>
+                  <option value="5">Рязань</option>
+                  <option value="6">Магадан</option>
+            </optgroup>
+            </select>
+            <input type="submit" value="Ок">
+        </fieldset></td>   
+    </tr>
+    <tr>
+        <td><b>Загрузка файла на сервер:</b><fieldset><legend>Upload</legend>
+            Файл:<br>
+            <input type="file" value="Choose Fail" name="fail"><br>
+            Срок хранения(года):<br>
+            <input type="date" name="date"><input type="submit" value="загрузить">
+        </fieldset></td>
+        <td><b>Валидация данных HTML5:</b><fieldset><legend>Строка поиска</legend>
+            <input placeholder="Только русские буквы" type="text" name="name"><br>
+            Телефонный номер в формате<br> 
+            +XXX-XX-XXXXXXX, где X-любое число<br>
+            <input type="text" name="phone" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"><br>
+            <input type="submit" value="Проверить">
+        </fieldset></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
