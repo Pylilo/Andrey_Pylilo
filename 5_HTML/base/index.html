@@ -13,36 +13,36 @@
         <td><b>Простая форма поиска с вариантами:</b><fieldset><legend>Строка поиска</legend>
             <input type="text" name="Search" maxlength="10">
             <input type="submit" value="Искать"><br> 
-            <input type="radio" name="radio" value="на сайте">на сайте
-         <input type="radio" name="radio" value="в google">в google
+            <label><input type="radio" name="radio" value="на сайте">на сайте</label>
+         <label><input type="radio" name="radio" value="в google">в google</label>
         </fieldset></td>
         <td><b>Простая форма поиска с вариантами:</b><fieldset><legend>Строка поиска</legend>
-            <input required autofocus placeholder="обязательно поле" type="text" name="Search">
+            <input required autofocus placeholder="обязательно поле" type="text" name="Search"><sup>*</sup>
             <input type="submit" value="Искать"><br>
-            <input type="radio" name="radio2" value="на сайте">на сайте
-            <input type="radio" name="radio2" value="в google">в google
+            <label><input type="radio" name="radio2" value="на сайте">на сайте</label>
+            <label><input type="radio" name="radio2" value="в google">в google</label>
         </fieldset></td>
     </tr>
     <tr>
         <td><b>Простая форма авторизации:</b><fieldset><legend>Авторизуйтесь</legend>
-            <input required placeholder="обязательное поле" type="text" name="login">Логин<br>
-            <input required placeholder="обязательное поле" type="password" name="password">Пароль<br>
-            <input type="checkbox" name="forever"> Оставаться в системе<br>
+            <input required placeholder="обязательное поле" type="text" name="login"><sup>*</sup>Логин<br>
+            <input required placeholder="обязательное поле" type="password" name="password"><sup>*</sup>Пароль<br>
+            <label><input type="checkbox" name="forever"> Оставаться в системе</label><br>
             <input type="submit" value="Войти">
         </fieldset></td>
         <td><b>Опрос(голосование):</b><fieldset><legend>Как Вам?</legend>
-            <input type="radio" name="The senses">ничего<br>
-            <input type="radio" name="The senses">неплохо<br>
-            <input type="radio" name="The senses">хорошо<br>
-            <input type="radio" name="The senses">супер<br>
-            <input type="hidden" name="data_voite"value="2013.12.31">
+            <label><input type="radio" name="The senses">ничего</label><br>
+            <label><input type="radio" name="The senses">неплохо</label><br>
+            <label><input type="radio" name="The senses">хорошо</label><br>
+            <label><input type="radio" name="The senses">супер</label><br>
+            <label><input type="hidden" name="data_voite"value="2013.12.31">
             <input type="submit" value="Отправить">
         </fieldset></td>
     </tr>
     <tr>
         <td><b>Отзыв:</b><fieldset><legend>Оставьте Ваш отзыв</legend>
-            <input required placeholder="обязательное поле" type="text" name="name">Имя<br>
-            <input required placeholder="обязательное поле" type="email" name="email">e-mail<br>
+            <input required placeholder="обязательное поле" type="text" name="name"><sup>*</sup>Имя<br>
+            <input required placeholder="обязательное поле" type="email" name="email"><sup>*</sup>e-mail<br>
             <textarea name="text_area" lang="ru">Форма отправки</textarea><br>
             <input type="submit" value="Отправить">
         </fieldset></td>
