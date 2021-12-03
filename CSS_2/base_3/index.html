@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <style>
+.navigation{
+width: 15em;
+background-color: #666B61;
+float: left;
+}
+ul{
+    list-style: square;
+}
+.main{
+    background-color:#AEB1A9;
+}
+.article{
+    background-color: #4A4D47;
+    
+    overflow: hidden;   
+}
+img{ float: right;
+}
+.bottom{
+    background-color: #64695D;
+   
+}
+.clear{
+    clear: both;
+}
+
+</style>   
+
+<div class="main"><div class="navigation">
+    <h4>Блог навигации</h4>
+    <ul>
+        <li>Ширина 15em</li>
+        <li>Должен присутствовать цвет фона</li>
+        <li>Распологаться слева</li>
+        <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+    </ul>
+</div>
+<div class="article" style="margin-bottom: 0.2em;">        
+    <h4>Статья 1</h4>
+    <p>Размер блока:<br>
+    Занимает всю доступную ширину<br>
+    Должен присутствовать цвет фона<br>
+    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-<br>
+    bottom</p>
+</div>
+<div class="article" style="margin-bottom: 0.2em;">
+    <h4>Статья 2</h4>
+    <p>Размер блока:<br>
+    Занимает всю доступную ширину<br>
+    Должен присутствовать цвет фона<br>
+    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-<br>
+    bottom. Картинка вставлена с помощью тега, плавание организовано по правому краю внутри данной статьи для этой картинки.</p>
+    <img src="mail.png" alt="mail" title="Отправить письмо">
+</div>
+<div class="bottom">
+    <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
+</div>
+<div class="clear"></div>
+</div>
+
+
+</body>
+</html>

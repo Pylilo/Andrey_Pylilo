@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            
+            width: 100px;
+            margin: 0;
+            padding: 0;
+        }
+        div.Mn{
+            display: flex;
+            width: 100px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        div.Mn > div{
+            background-color: darkkhaki; border: solid 1px fuchsia; position: relative; cursor: pointer;
+        }
+        div.Mn > div:hover div.second{
+            display: block;
+            position: absolute; top: 19px;
+            transition: 500ms
+    
+        }
+        div.second{
+            text-align: center;
+            width: 100px;
+            display: none;
+            background-color: fuchsia;
+            border:solid red;
+        }
+        
+        @media all and (max-width: 223px){
+        div.Mn > div:hover div.second{
+            display: block;
+            position: absolute;top: 0px; left: 100px;}
+        }
+            
+            
+            .second{
+            transition: margin-left 2s .5s;}
+           
+    </style>
+  
+  
+  
+  
+  
+  <div class="Mn">
+        <div>Понедельник
+            <div class="second">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="Mn">
+        <div>Вторник
+            <div class="second">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    </div>
+    <div class="Mn">
+        <div>Среда
+            <div class="second">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+            </div>
+            </div>
+        </div>
+        <div class="Mn">
+            <div>Четверг
+                <div class="second">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        </div>
+        <div class="Mn">
+            <div>Пятница
+                <div class="second">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        </div>
+                    
+</body>
+</html>
