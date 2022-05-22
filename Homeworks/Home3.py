@@ -28,7 +28,7 @@ if con_trees == "да":
 
 
 
-reservoir = str.lower(input("Есть ли водоём? "))
+reservoir = str.lower(input("Есть водоём? "))
 if reservoir == "нет":
     S_min = 0
 
